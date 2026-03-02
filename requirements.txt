@@ -6,3 +6,10 @@ numpy
 scikit-learn
 scikit-image
 pandas
+ultralytics
+tqdm
+pyyaml
+requests
+matplotlib
+seaborn
+psutil
