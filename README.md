@@ -69,3 +69,6 @@ docker run -p 7860:7860 plate-recognition
 The OCR component utilizes a Random Forest classifier trained on a labeled dataset of character HOG features. This approach ensures high reliability across various lighting conditions and camera angles.
 
 ---
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
