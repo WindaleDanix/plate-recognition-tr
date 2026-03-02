@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaka Tanıma Sistemi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Plaka Tanıma Sistemi</h1>
+        <p>Araç plakasını hızlıca tespit etmek için bir fotoğraf yükleyin.</p>
+        
+        <div class="card">
+            <form action="/" method="post" enctype="multipart/form-data">
+                <h2>Fotoğraf Yükle</h2>
+                <input type="file" name="file" id="file" class="file-input" required accept="image/*">
+                
+                <label for="file" class="file-label">
+                    <span class="file-label-text">Dosya Seç</span>
+                </label>
+                
+                <button type="submit" class="upload-btn">Yükle ve Tanı</button>
+            </form>
+        </div>
+
+        {% if results %}
+        <div class="card results-card">
+            <h2>Sonuçlar</h2>
+            <div class="results-grid">
+                <div class="result-item">
+                    <h3>Araç Fotoğrafı</h3>
+                    <img src="{{ results.original_image }}" alt="Yüklenen Araç">
+                </div>
+                <div class="result-item">
+                    <h3>Tespit Edilen Plaka</h3>
+                    {% if results.plate_image %}
+                    <img src="{{ results.plate_image }}" alt="Tespit Edilen Plaka">
+                    {% endif %}
+                    <p class="plate-text">{{ results.plate_text }}</p>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <script>
+        // Dosya giriş elementini ve dosya adını göstereceğimiz etiketi seçiyoruz
+        const fileInput = document.getElementById('file');
+        const fileLabelText = document.querySelector('.file-label-text');
+        const fileLabel = document.querySelector('.file-label');
+
+        // Dosya girişinde bir değişiklik olduğunda (yani bir dosya seçildiğinde) bu fonksiyon çalışır
+        fileInput.addEventListener('change', function() {
+            // Eğer bir veya daha fazla dosya seçildiyse...
+            if (this.files && this.files.length > 0) {
+                // Seçilen ilk dosyanın adını etiketin içine yaz
+                fileLabelText.textContent = this.files[0].name;
+                // Etikete 'file-chosen' class'ını ekleyerek stilini değiştir (onay işareti için)
+                fileLabel.classList.add('file-chosen');
+            } else {
+                // Eğer dosya seçimi iptal edilirse, yazıyı eski haline getir
+                fileLabelText.textContent = 'Dosya Seç';
+                fileLabel.classList.remove('file-chosen');
+            }
+        });
+    </script>
+
+</body>
+</html>

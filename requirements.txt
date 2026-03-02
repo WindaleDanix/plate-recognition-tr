@@ -1,0 +1,8 @@
+flask
+opencv-python-headless
+torch
+torchvision
+numpy
+scikit-learn
+scikit-image
+pandas
