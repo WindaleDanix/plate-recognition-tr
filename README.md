@@ -72,3 +72,15 @@ The OCR component utilizes a Random Forest classifier trained on a labeled datas
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📧 Contact & Connect
+If you have any questions, suggestions, or just want to connect, feel free to reach out!
+
+* **Erdem Yavuz Hacisoftaoglu**
+* **LinkedIn:** [linkedin.com/in/erdemyavuz](https://www.linkedin.com/in/erdem-yavuz-hacisoftaoglu/) 
+* **Email:** [your-email@example.com](mailto:erdemyavuz.hacisoftaoglu@gmail.com)
+* **Hugging Face:** [huggingface.co/erdemyavuz](https://huggingface.co/erdemyavuz)
+
+---
